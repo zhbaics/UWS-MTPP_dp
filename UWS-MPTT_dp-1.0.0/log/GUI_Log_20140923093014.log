@@ -1,0 +1,194 @@
+2014-9-23 9:30:14 INFO:[dataprotect.ui.SanBootView] 二炮应急恢复系统配置管理器 6.1.0 版 buildtime:   Log Level: 1
+2014-9-23 9:30:14 INFO:[dataprotect.ui.SanBootView] Restore mirror type: 2
+2014-9-23 9:30:14 INFO:[dataprotect.ui.SanBootView] global high delta: 0
+2014-9-23 9:30:14 INFO:[dataprotect.ui.SanBootView] global width delta: 0
+2014-9-23 9:30:24 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-23 9:30:25 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-23 9:30:25 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-23 9:30:26 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-23 9:30:26 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-23 9:30:27 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0
+2014-9-23 9:30:28 INFO:[dataprotect.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2014-9-23 9:30:29 INFO:[dataprotect.data.GetBootHost]  get BootHost retcode: 0
+2014-9-23 9:30:29 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2014-9-23 9:30:30 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2014-9-23 9:30:30 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-23 9:30:31 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-23 9:30:31 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-23 9:30:33 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-23 9:30:33 INFO:[dataprotect.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2014-9-23 9:30:34 INFO:[dataprotect.data.GetServMap]  get servicemap retcode: 0
+2014-9-23 9:30:34 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2014-9-23 9:30:35 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd retcode: 0
+2014-9-23 9:30:35 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-23 9:30:36 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-23 9:30:36 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-23 9:30:37 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-23 9:30:37 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2014-9-23 9:30:38 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2014-9-23 9:30:38 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2014-9-23 9:30:39 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2014-9-23 9:30:39 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-23 9:30:40 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-23 9:30:40 INFO:[dataprotect.data.ManageDB] db type: 0 for 2_E_cmdp_UWS727
+2014-9-23 9:30:40 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_C_cmdp_UWS727
+2014-9-23 9:30:40 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_D_cmdp_UWS727
+2014-9-23 9:30:40 INFO:[dataprotect.data.ManageDB] db type: 0 for 7_C_cmdp_UWS727
+2014-9-23 9:30:40 ERROR:[dataprotect.data.ManageDB] this mg of the vol is missing, the vol'rootid: 26
+2014-9-23 9:30:40 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2014-9-23 9:30:41 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile recode: 0
+2014-9-23 9:30:41 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /usr/odybk/server/profile/-1-2014-09-22-05-04-40.prf
+2014-9-23 9:30:42 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-23 9:30:42 INFO:[dataprotect.data.ManageDB] /usr/odybk/server/profile/-1-2014-09-22-05-04-40.prf is a SWU profile.
+2014-9-23 9:30:42 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2014-9-23 9:30:44 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2014-9-23 9:30:44 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2014-9-23 9:30:45 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2014-9-23 9:30:45 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-23 9:30:46 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-23 9:30:46 INFO:[dataprotect.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2014-9-23 9:30:47 INFO:[dataprotect.data.GetLicence]  get license retcode: 0
+2014-9-23 9:30:47 INFO:[dataprotect.ui.InitApp] mtpp point: 16
+2014-9-23 9:30:47 INFO:[dataprotect.ui.InitApp] cmdp point: 16
+2014-9-23 9:30:47 INFO:[dataprotect.ui.InitApp] mtpp maxsnap num: 250
+2014-9-23 9:30:47 INFO:[dataprotect.ui.InitApp] cmdp maxsnap num: 250
+2014-9-23 9:30:49 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140923093049 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2014-9-23 9:30:51 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-23 9:30:52 INFO:[dataprotect.DhcpSet] ########### Entering dhcp operation action. 
+2014-9-23 9:31:07 INFO:[dataprotect.DhcpSet] ########### End of dhcp operation acion. 
+2014-9-23 9:31:18 INFO:[dataprotect.LogoutAction] ########### Entering logout action. 
+2014-9-23 9:31:18 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140923093118 audit_clnt_id=0 audit_event_id=3  "audit_event_desc=Logout from system successfully."
+2014-9-23 9:31:20 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-23 9:31:20 INFO:[dataprotect.data.ManageDB] begin to logout server.
+2014-9-23 9:31:20 ERROR:[dataprotect.data.ManageDB] logout server error: 
+2014-9-23 9:31:20 INFO:[dataprotect.LogoutAction] ########### End of logout action. 
+2014-9-23 9:31:29 INFO:[dataprotect.LoginAction] ########### Entering login action. 
+2014-9-23 9:31:33 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-23 9:31:33 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-23 9:31:33 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-23 9:31:34 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-23 9:31:34 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-23 9:31:35 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0
+2014-9-23 9:31:35 INFO:[dataprotect.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2014-9-23 9:31:36 INFO:[dataprotect.data.GetBootHost]  get BootHost retcode: 0
+2014-9-23 9:31:36 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2014-9-23 9:31:37 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2014-9-23 9:31:37 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-23 9:31:38 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-23 9:31:39 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-23 9:31:40 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-23 9:31:40 INFO:[dataprotect.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2014-9-23 9:31:41 INFO:[dataprotect.data.GetServMap]  get servicemap retcode: 0
+2014-9-23 9:31:41 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2014-9-23 9:31:42 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd retcode: 0
+2014-9-23 9:31:42 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-23 9:31:43 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-23 9:31:43 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-23 9:31:44 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-23 9:31:44 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2014-9-23 9:31:45 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2014-9-23 9:31:45 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2014-9-23 9:31:46 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2014-9-23 9:31:46 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-23 9:31:47 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-23 9:31:47 INFO:[dataprotect.data.ManageDB] db type: 0 for 2_E_cmdp_UWS727
+2014-9-23 9:31:47 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_C_cmdp_UWS727
+2014-9-23 9:31:47 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_D_cmdp_UWS727
+2014-9-23 9:31:47 INFO:[dataprotect.data.ManageDB] db type: 0 for 7_C_cmdp_UWS727
+2014-9-23 9:31:47 ERROR:[dataprotect.data.ManageDB] this mg of the vol is missing, the vol'rootid: 26
+2014-9-23 9:31:47 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2014-9-23 9:31:48 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile recode: 0
+2014-9-23 9:31:48 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /usr/odybk/server/profile/-1-2014-09-22-05-04-40.prf
+2014-9-23 9:31:49 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-23 9:31:49 INFO:[dataprotect.data.ManageDB] /usr/odybk/server/profile/-1-2014-09-22-05-04-40.prf is a SWU profile.
+2014-9-23 9:31:49 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2014-9-23 9:31:50 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2014-9-23 9:31:50 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2014-9-23 9:31:51 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2014-9-23 9:31:51 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-23 9:31:52 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-23 9:31:52 INFO:[dataprotect.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2014-9-23 9:31:54 INFO:[dataprotect.data.GetLicence]  get license retcode: 0
+2014-9-23 9:31:54 INFO:[dataprotect.ui.InitApp] mtpp point: 16
+2014-9-23 9:31:54 INFO:[dataprotect.ui.InitApp] cmdp point: 16
+2014-9-23 9:31:54 INFO:[dataprotect.ui.InitApp] mtpp maxsnap num: 250
+2014-9-23 9:31:54 INFO:[dataprotect.ui.InitApp] cmdp maxsnap num: 250
+2014-9-23 9:39:02 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140923093902 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2014-9-23 9:39:03 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-23 9:39:03 INFO:[dataprotect.LoginAction] ########### End of login action. 
+2014-9-23 9:45:47 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3;"
+2014-9-23 9:45:49 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd retcode: 0
+2014-9-23 9:45:49 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_cmdp_query_initstat 198.88.88.154,2015,2_E_cmdp_UWS727
+2014-9-23 9:46:05 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress retcode: 0
+2014-9-23 9:46:05 INFO:[dataprotect.data.ManageDB] check mg status cmd: /usr/odybk/vsnap/checkmg 2
+2014-9-23 9:46:06 INFO:[dataprotect.data.ManageDB] check mg status cmd retcode: 255
+2014-9-23 9:46:06 INFO:[dataprotect.data.ManageDB] check mg status cmd: /usr/odybk/vsnap/checkmg 3
+2014-9-23 9:46:07 INFO:[dataprotect.data.ManageDB] check mg status cmd retcode: 255
+2014-9-23 9:46:30 INFO:[dataprotect.LogoutAction] ########### Entering logout action. 
+2014-9-23 9:46:30 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140923094630 audit_clnt_id=0 audit_event_id=3  "audit_event_desc=Logout from system successfully."
+2014-9-23 9:46:31 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-23 9:46:31 INFO:[dataprotect.data.ManageDB] begin to logout server.
+2014-9-23 9:46:31 ERROR:[dataprotect.data.ManageDB] logout server error: 
+2014-9-23 9:46:31 INFO:[dataprotect.LogoutAction] ########### End of logout action. 
+2014-9-23 9:47:38 INFO:[dataprotect.LoginAction] ########### Entering login action. 
+2014-9-23 9:47:41 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-23 9:47:41 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-23 9:47:41 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-23 9:47:42 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-23 9:47:42 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-23 9:47:43 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0
+2014-9-23 9:47:43 INFO:[dataprotect.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2014-9-23 9:47:44 INFO:[dataprotect.data.GetBootHost]  get BootHost retcode: 0
+2014-9-23 9:47:44 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2014-9-23 9:47:45 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2014-9-23 9:47:45 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-23 9:47:46 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-23 9:47:46 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-23 9:47:47 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-23 9:47:47 INFO:[dataprotect.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2014-9-23 9:47:48 INFO:[dataprotect.data.GetServMap]  get servicemap retcode: 0
+2014-9-23 9:47:48 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2014-9-23 9:47:49 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd retcode: 0
+2014-9-23 9:47:49 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-23 9:48:11 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-23 9:48:11 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-23 9:48:12 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-23 9:48:12 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2014-9-23 9:48:13 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2014-9-23 9:48:13 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2014-9-23 9:48:14 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2014-9-23 9:48:14 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-23 9:48:16 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-23 9:48:16 INFO:[dataprotect.data.ManageDB] db type: 0 for 2_E_cmdp_UWS727
+2014-9-23 9:48:16 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_C_cmdp_UWS727
+2014-9-23 9:48:16 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_D_cmdp_UWS727
+2014-9-23 9:48:16 INFO:[dataprotect.data.ManageDB] db type: 0 for 7_C_cmdp_UWS727
+2014-9-23 9:48:16 ERROR:[dataprotect.data.ManageDB] this mg of the vol is missing, the vol'rootid: 26
+2014-9-23 9:48:16 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2014-9-23 9:48:17 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile recode: 0
+2014-9-23 9:48:17 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /usr/odybk/server/profile/-1-2014-09-22-05-04-40.prf
+2014-9-23 9:48:18 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-23 9:48:18 INFO:[dataprotect.data.ManageDB] /usr/odybk/server/profile/-1-2014-09-22-05-04-40.prf is a SWU profile.
+2014-9-23 9:48:18 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2014-9-23 9:48:19 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2014-9-23 9:48:19 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2014-9-23 9:48:20 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2014-9-23 9:48:20 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-23 9:48:21 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-23 9:48:21 INFO:[dataprotect.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2014-9-23 9:48:22 INFO:[dataprotect.data.GetLicence]  get license retcode: 0
+2014-9-23 9:48:22 INFO:[dataprotect.ui.InitApp] mtpp point: 16
+2014-9-23 9:48:22 INFO:[dataprotect.ui.InitApp] cmdp point: 16
+2014-9-23 9:48:22 INFO:[dataprotect.ui.InitApp] mtpp maxsnap num: 250
+2014-9-23 9:48:22 INFO:[dataprotect.ui.InitApp] cmdp maxsnap num: 250
+2014-9-23 9:48:59 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140923094859 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2014-9-23 9:49:01 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-23 9:49:01 INFO:[dataprotect.LoginAction] ########### End of login action. 
+2014-9-23 10:00:01 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3;"
+2014-9-23 10:00:02 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd retcode: 0
+2014-9-23 10:00:02 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_cmdp_query_initstat 198.88.88.154,2015,2_E_cmdp_UWS727
+2014-9-23 10:00:10 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress retcode: 0
+2014-9-23 10:00:10 INFO:[dataprotect.data.ManageDB] check mg status cmd: /usr/odybk/vsnap/checkmg 2
+2014-9-23 10:00:11 INFO:[dataprotect.data.ManageDB] check mg status cmd retcode: 255
+2014-9-23 10:00:11 INFO:[dataprotect.data.ManageDB] check mg status cmd: /usr/odybk/vsnap/checkmg 3
+2014-9-23 10:00:12 INFO:[dataprotect.data.ManageDB] check mg status cmd retcode: 255

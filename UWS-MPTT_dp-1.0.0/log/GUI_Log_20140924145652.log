@@ -1,0 +1,10 @@
+2014-9-24 14:56:53 INFO:[dataprotect.ui.SanBootView] 二炮应急恢复系统配置管理器 6.1.0 版 buildtime:   Log Level: 1
+2014-9-24 14:56:53 INFO:[dataprotect.ui.SanBootView] Restore mirror type: 2
+2014-9-24 14:56:53 INFO:[dataprotect.ui.SanBootView] global high delta: 0
+2014-9-24 14:56:53 INFO:[dataprotect.ui.SanBootView] global width delta: 0
+2014-9-24 14:57:00 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-24 14:57:00 ERROR:[dataprotect.data.ManageDB] login server error: 用户名或密码错误。
+2014-9-24 14:57:01 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-24 14:57:01 ERROR:[dataprotect.data.ManageDB] login server error: 用户名或密码错误。
+2014-9-24 14:57:03 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-24 14:57:03 ERROR:[dataprotect.data.ManageDB] login server error: 用户名或密码错误。

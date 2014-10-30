@@ -1,0 +1,79 @@
+2014-9-24 18:50:23 INFO:[dataprotect.ui.SanBootView] 二炮应急恢复系统配置管理器 6.1.0 版 buildtime:   Log Level: 1
+2014-9-24 18:50:23 INFO:[dataprotect.ui.SanBootView] Restore mirror type: 2
+2014-9-24 18:50:23 INFO:[dataprotect.ui.SanBootView] global high delta: 0
+2014-9-24 18:50:23 INFO:[dataprotect.ui.SanBootView] global width delta: 0
+2014-9-24 18:50:33 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-24 18:50:33 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-24 18:50:33 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-24 18:50:34 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-24 18:50:34 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-24 18:50:35 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0
+2014-9-24 18:50:36 INFO:[dataprotect.ui.InitApp] getting dhcp info.....
+2014-9-24 18:50:36 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2014-9-24 18:50:37 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-24 18:50:37 INFO:[dataprotect.ui.InitApp]  dhcpEnable: true
+2014-9-24 18:50:37 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2014-9-24 18:50:38 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2014-9-24 18:50:38 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2014-9-24 18:50:39 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2014-9-24 18:50:39 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2014-9-24 18:50:40 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2014-9-24 18:50:40 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-24 18:50:41 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-24 18:50:41 INFO:[dataprotect.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2014-9-24 18:50:42 INFO:[dataprotect.data.GetBootHost]  get BootHost retcode: 0
+2014-9-24 18:50:42 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2014-9-24 18:50:43 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2014-9-24 18:50:43 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-24 18:50:44 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-24 18:50:44 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-24 18:50:45 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-24 18:50:45 INFO:[dataprotect.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2014-9-24 18:50:46 INFO:[dataprotect.data.GetServMap]  get servicemap retcode: 0
+2014-9-24 18:50:46 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2014-9-24 18:50:47 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd retcode: 0
+2014-9-24 18:50:47 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-24 18:50:48 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-24 18:50:48 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-24 18:50:49 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-24 18:50:49 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2014-9-24 18:50:50 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2014-9-24 18:50:50 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2014-9-24 18:50:51 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2014-9-24 18:50:51 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-24 18:50:52 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-24 18:50:52 INFO:[dataprotect.data.ManageDB] db type: 0 for 2_E_cmdp_UWS727
+2014-9-24 18:50:52 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_C_cmdp_UWS727
+2014-9-24 18:50:52 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_D_cmdp_UWS727
+2014-9-24 18:50:52 INFO:[dataprotect.data.ManageDB] db type: 0 for 7_C_cmdp_UWS727
+2014-9-24 18:50:52 INFO:[dataprotect.data.ManageDB] db type: 0 for z2_/data_198.88.88.78
+2014-9-24 18:50:52 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2014-9-24 18:50:53 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile recode: 0
+2014-9-24 18:50:53 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /usr/odybk/server/profile/-1-2014-09-23-05-44-18.prf
+2014-9-24 18:50:54 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-24 18:50:54 INFO:[dataprotect.data.ManageDB] /usr/odybk/server/profile/-1-2014-09-23-05-44-18.prf is a SWU profile.
+2014-9-24 18:50:54 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2014-9-24 18:50:55 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2014-9-24 18:50:55 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2014-9-24 18:50:56 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2014-9-24 18:50:56 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-24 18:50:57 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-24 18:50:57 INFO:[dataprotect.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2014-9-24 18:50:58 INFO:[dataprotect.data.GetLicence]  get license retcode: 0
+2014-9-24 18:50:58 INFO:[dataprotect.ui.InitApp] mtpp point: 16
+2014-9-24 18:50:58 INFO:[dataprotect.ui.InitApp] cmdp point: 16
+2014-9-24 18:50:58 INFO:[dataprotect.ui.InitApp] mtpp maxsnap num: 250
+2014-9-24 18:50:58 INFO:[dataprotect.ui.InitApp] cmdp maxsnap num: 250
+2014-9-24 18:50:59 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140924185059 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2014-9-24 18:51:00 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-24 18:51:01 INFO:[dataprotect.DhcpSet] ########### Entering dhcp operation action. 
+2014-9-24 18:51:04 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2014-9-24 18:51:05 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-24 18:51:05 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2014-9-24 18:51:06 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2014-9-24 18:51:06 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2014-9-24 18:51:07 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2014-9-24 18:51:07 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2014-9-24 18:51:08 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2014-9-24 18:51:08 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-24 18:51:09 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0

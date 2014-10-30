@@ -1,0 +1,212 @@
+2014-9-16 11:17:52 INFO:[dataprotect.data.Get3rdDhcpInfo]  get the 3rd dhcp info cmd: cat /usr/odybk/server/conf//7-3rdDhcp.conf
+2014-9-16 11:17:53 INFO:[dataprotect.data.Get3rdDhcpInfo]  get the 3rd dhcp info retcode: 0
+2014-9-16 11:17:53 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile cmd: cat /usr/odybk/server/conf//7.conf
+2014-9-16 11:17:54 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile retcode: 0
+2014-9-16 11:18:08 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Init Windows Host By physical mode Begin ###################@@ 
+2014-9-16 11:18:08 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Build Mirror Begin ###################@@ 
+2014-9-16 11:18:08 INFO:[dataprotect.cmdp.service.CommonCMDPCommand] set init type cmd: /usr/odybk/server/bin/phydup_fun.sh mirror_agent_set_init_type 198.88.88.169,2015,pause,1
+2014-9-16 11:18:11 INFO:[dataprotect.data.ManageDB] set init type cmd retcode: 0
+2014-9-16 11:18:11 INFO:[dataprotect.cmdp.service.CommonCMDPCommand] set init type cmd: /usr/odybk/server/bin/phydup_fun.sh mirror_agent_set_init_type 198.88.88.169,2015,resume,0
+2014-9-16 11:18:14 INFO:[dataprotect.data.ManageDB] set init type cmd retcode: 0
+2014-9-16 11:18:14 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog] seled vol num: 1
+2014-9-16 11:18:14 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog] seled vol tid: 32822
+2014-9-16 11:18:14 INFO:[dataprotect.data.GetLunMap1] get lunmap cmd: /usr/odybk/server/bin/iscsi_boot_web.sh lslunmap 32822
+2014-9-16 11:18:15 INFO:[dataprotect.data.GetLunMap1] get lunmap retcode: 0
+2014-9-16 11:18:15 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Format Volume Begin ###################@@ 
+2014-9-16 11:18:15 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Format Volume End ###################@@ 
+2014-9-16 11:18:15 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  build mirror and lp End ###################@@ 
+2014-9-16 11:18:15 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Get other info Begin ###################@@ 
+2014-9-16 11:18:15 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client cmd: /sbin/clnt_cmd 198.88.88.169 2015 cmd -cmdtype executeother -command  ib_get_net_info.exe -a 00-0C-29-46-87-72
+2014-9-16 11:18:17 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2014-9-16 11:18:17 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Get other info END ###################@@ 
+2014-9-16 11:18:17 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Save info Begin ###################@@ 
+2014-9-16 11:18:17 INFO:[dataprotect.cmdp.ui.ReCrtPPProfileWhenInit] find volumes to delete, num# of del-vol is: 0
+2014-9-16 11:18:17 INFO:[dataprotect.cmdp.ui.ReCrtPPProfileWhenInit] find old profiles to delete, num of del-profile is: 0
+2014-9-16 11:18:17 INFO:[dataprotect.cmdp.ui.ReCrtPPProfileWhenInit] find new profiles to create, size of crt-profile is: 0
+2014-9-16 11:18:17 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-16 11:18:18 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-16 11:18:18 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-16 11:18:19 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-16 11:18:19 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-16 11:18:21 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-16 11:18:21 INFO:[dataprotect.data.ManageDB] db type: 0 for 2_E_cmdp_UWS727
+2014-9-16 11:18:21 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_C_cmdp_UWS727
+2014-9-16 11:18:21 INFO:[dataprotect.data.ManageDB] db type: 0 for 5_D_cmdp_UWS727
+2014-9-16 11:18:21 INFO:[dataprotect.data.ManageDB] db type: 0 for 7_C_cmdp_UWS727
+2014-9-16 11:18:21 INFO:[dataprotect.data.ManageDB] send singal to mg cmd: /usr/odybk/vsnap/killmg 11 1
+2014-9-16 11:18:22 INFO:[dataprotect.data.ManageDB] send signal to mg retcode: 0
+2014-9-16 11:18:22 INFO:[dataprotect.data.ManageDB]  add volmap cmd: /usr/odybk/server/bin/idbmgr -vol -add  vol_name=7_C_cmdp_UWS727 vol_clntid=7 vol_disklabel=C:\ vol_target_id=32822 vol_max_snap=250 "vol_desc=mg-C" vol_rootid=13 "rollback_orgi_volname=" "rollback_orgi_uws=" vol_protect_type=1
+2014-9-16 11:18:23 INFO:[dataprotect.data.ManageDB]  add volmap cmd retcode: 255
+2014-9-16 11:18:23 ERROR:[dataprotect.data.ManageDB]  add volmap cmd errmsg: column vol_name is not unique
+error occured insert into volume values('7_C_cmdp_UWS727','7','C:\','32822','250','mg-C','','13','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1','','');
+
+2014-9-16 11:18:23 WARNING:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  old dhcp info is null, new mac: 000C29468772
+2014-9-16 11:18:23 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh delcli -p 000C29468772
+2014-9-16 11:18:25 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2014-9-16 11:18:25 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd: hostname
+2014-9-16 11:18:26 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd retcode: 0
+2014-9-16 11:18:31 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh addcli  -i 198.88.88.169 -p 000C29468772 -s 198.88.88.0 -x 198.88.88.101 -ostype windows
+2014-9-16 11:18:33 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2014-9-16 11:18:33 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-16 11:18:34 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-16 11:18:34 INFO:[dataprotect.data.ManageDB]  send this file to server: tmp8783344955269587566ipInfo
+2014-9-16 11:18:34 INFO:[dataprotect.data.ManageDB]  send file to server retcode: 0
+2014-9-16 11:18:34 INFO:[dataprotect.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp8783344955269587566ipInfo /usr/odybk/server/conf//7.conf
+2014-9-16 11:18:35 INFO:[dataprotect.data.ManageDB]  mv cmd retcode: 0
+2014-9-16 11:18:35 INFO:[dataprotect.data.ManageDB]  send this file to server: tmp4985232543650100638ipInfo
+2014-9-16 11:18:35 INFO:[dataprotect.data.ManageDB]  send file to server retcode: 0
+2014-9-16 11:18:35 INFO:[dataprotect.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp4985232543650100638ipInfo /usr/odybk/server/conf//7-disk.conf
+2014-9-16 11:18:36 INFO:[dataprotect.data.ManageDB]  mv cmd retcode: 0
+2014-9-16 11:18:36 INFO:[dataprotect.data.ManageDB]  send this file to server: tmp3859068429878774460ipInfo
+2014-9-16 11:18:36 INFO:[dataprotect.data.ManageDB]  send file to server retcode: 0
+2014-9-16 11:18:36 INFO:[dataprotect.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp3859068429878774460ipInfo /usr/odybk/server/conf//7-part.conf
+2014-9-16 11:18:37 INFO:[dataprotect.data.ManageDB]  mv cmd retcode: 0
+2014-9-16 11:18:37 INFO:[dataprotect.data.ManageDB]  send this file to server: tmp5191588623240453610ipInfo
+2014-9-16 11:18:37 INFO:[dataprotect.data.ManageDB]  send file to server retcode: 0
+2014-9-16 11:18:37 INFO:[dataprotect.data.ManageDB]  mv cmd: mv /usr/odybk/server/tmp/tmp5191588623240453610ipInfo /usr/odybk/server/conf//7-service.conf
+2014-9-16 11:18:38 INFO:[dataprotect.data.ManageDB]  mv cmd retcode: 0
+2014-9-16 11:18:38 INFO:[dataprotect.data.ManageDB] stop_allserv: 1
+2014-9-16 11:18:38 INFO:[dataprotect.data.ManageDB] mod boot host: /usr/odybk/server/bin/idbmgr -clnt -mod  clnt_id=7 clnt_inited_flag=1 clnt_auto_dr_flag=0 clnt_auto_reboot_flag=0 clnt_stop_base_service=1 clnt_mac_address=00-0C-29-46-87-72 clnt_boot_mode=1
+2014-9-16 11:18:39 INFO:[dataprotect.data.ManageDB] mod boot host retcode: 0
+2014-9-16 11:18:39 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140916111839 audit_clnt_id=7 audit_event_id=135  "audit_event_desc=Initialize host: ESX-67-XP successfully."
+2014-9-16 11:18:40 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-16 11:18:40 INFO:[dataprotect.data.ManageDB]  send this file to server: tmp7698491493709511202uwstmpfile
+2014-9-16 11:18:40 INFO:[dataprotect.data.ManageDB]  send file to server retcode: 0
+2014-9-16 11:18:40 INFO:[dataprotect.data.ManageDB]  add swu report: /usr/odybk/server/bin/idbmgr -report -add filename=/usr/odybk/server/tmp/tmp7698491493709511202uwstmpfile
+2014-9-16 11:18:41 INFO:[dataprotect.data.ManageDB]  add swu report retcode: 0
+2014-9-16 11:18:41 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Save info End ###################@@ 
+2014-9-16 11:18:41 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Init Windows host End ###################@@ 
+2014-9-16 11:20:51 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### End of window host's phy-init process action. 
+2014-9-16 11:20:53 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3;"
+2014-9-16 11:20:54 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd retcode: 0
+2014-9-16 11:20:54 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_cmdp_query_initstat 198.88.88.169,2015,7_C_cmdp_UWS727
+2014-9-16 11:20:57 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress retcode: 0
+2014-9-16 11:20:57 INFO:[dataprotect.data.ManageDB] check mg status cmd: /usr/odybk/vsnap/checkmg 11
+2014-9-16 11:20:58 INFO:[dataprotect.data.ManageDB] check mg status cmd retcode: 255
+2014-9-16 11:21:02 INFO:[dataprotect.data.GetLunMap] get lunmap cmd: /usr/odybk/server/bin/iscsi_boot_web.sh lslunmap 32822
+2014-9-16 11:21:03 INFO:[dataprotect.data.GetLunMap] get lunmap retcode: 0
+2014-9-16 11:21:04 INFO:[dataprotect.data.GetBriefVDisk]  get brief disk cmd: /usr/odybk/vsnap/listsnap -m 13
+2014-9-16 11:21:05 INFO:[dataprotect.data.GetBriefVDisk]  get brief disk cmd retcode: 0
+2014-9-16 11:21:05 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap db cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=0 and snap_root_id=13;"
+2014-9-16 11:21:06 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap cmd retcode: 0
+2014-9-16 11:21:06 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap db cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=-1 and snap_root_id=13;"
+2014-9-16 11:21:07 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap cmd retcode: 0
+2014-9-16 11:21:07 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap db cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=-2 and snap_root_id=13;"
+2014-9-16 11:21:08 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap cmd retcode: 0
+2014-9-16 11:21:11 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3;"
+2014-9-16 11:21:12 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd retcode: 0
+2014-9-16 11:21:12 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_cmdp_query_initstat 198.88.88.169,2015,7_C_cmdp_UWS727
+2014-9-16 11:21:15 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress retcode: 0
+2014-9-16 11:21:15 INFO:[dataprotect.data.ManageDB] check mg status cmd: /usr/odybk/vsnap/checkmg 11
+2014-9-16 11:21:16 INFO:[dataprotect.data.ManageDB] check mg status cmd retcode: 255
+2014-9-16 11:21:22 INFO:[dataprotect.cmdp.action.FailoverByPhyProtectAction] ########### Entering phy-failover action. 
+2014-9-16 11:21:27 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) cmd: /sbin/clnt_cmd 198.88.88.169 2015 cmd -cmdtype executeother -command  services_process.exe list 2>/dev/null
+2014-9-16 11:21:29 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2014-9-16 11:21:29 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) cmd: cat  /usr/odybk/server/conf//7-service.conf
+2014-9-16 11:21:30 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2014-9-16 11:21:33 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client cmd: cat /usr/odybk/server/conf//7.conf
+2014-9-16 11:21:34 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2014-9-16 11:21:34 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile cmd: cat /usr/odybk/server/conf//7.conf
+2014-9-16 11:21:35 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile retcode: 0
+2014-9-16 11:21:36 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile cmd: cat /usr/odybk/server/conf//7.conf
+2014-9-16 11:21:37 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile retcode: 0
+2014-9-16 11:21:37 INFO:[dataprotect.data.Get3rdDhcpInfo]  get the 3rd dhcp info cmd: cat /usr/odybk/server/conf//7-3rdDhcp.conf
+2014-9-16 11:21:38 INFO:[dataprotect.data.Get3rdDhcpInfo]  get the 3rd dhcp info retcode: 0
+2014-9-16 11:21:41 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd:/usr/odybk/vsnap/idbmgr -cloneinfo -prt  src_host_id=7 src_host_type=0 src_disk_root_id=13
+2014-9-16 11:21:42 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd retcode:0
+2014-9-16 11:21:42 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap db cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_root_id=13;"
+2014-9-16 11:21:43 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap cmd retcode: 0
+2014-9-16 11:21:43 INFO:[dataprotect.data.GetBriefVDisk]  get brief disk cmd: /usr/odybk/vsnap/listsnap -m 13
+2014-9-16 11:21:44 INFO:[dataprotect.data.GetBriefVDisk]  get brief disk cmd retcode: 0
+2014-9-16 11:21:44 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd:/usr/odybk/vsnap/idbmgr -cloneinfo -prt  src_host_id=7 src_host_type=0 src_disk_root_id=13
+2014-9-16 11:21:45 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd retcode:0
+2014-9-16 11:21:46 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd: hostname
+2014-9-16 11:21:47 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd retcode: 0
+2014-9-16 11:21:47 INFO:[dataprotect.data.GetIScsiSessionObj]  get iscsi session cmd: shell info connect
+2014-9-16 11:21:48 INFO:[dataprotect.data.GetIScsiSessionObj]  get iscsi session cmd retcode: 0
+2014-9-16 11:21:48 INFO:[dataprotect.data.ManageDB] mod boot host: /usr/odybk/server/bin/idbmgr -clnt -mod  clnt_id=7 clnt_auto_switch_disk=0
+2014-9-16 11:21:49 INFO:[dataprotect.data.ManageDB] mod boot host retcode: 0
+2014-9-16 11:21:49 INFO:[dataprotect.data.ManageDB]  mod volmap cmd: /usr/odybk/server/bin/idbmgr -vol -mod vol_name=7_C_cmdp_UWS727 setversion=-10 vol_last_sel_boot_version=32827 vol_last_sel_boot_info=20140916104836 last_sel_boot_disk_type=-1
+2014-9-16 11:21:50 INFO:[dataprotect.data.ManageDB]  mod volmap cmd retcode: 0
+2014-9-16 11:21:50 INFO:[dataprotect.data.ManageDB] addLM cmd: /usr/odybk/server/bin/ib_server_add_lunmap.sh addlunmap 32827 198.88.88.169 255.255.255.255 rw    
+2014-9-16 11:21:51 INFO:[dataprotect.data.ManageDB] addLM cmd retcode: 0
+2014-9-16 11:21:51 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-16 11:21:52 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-16 11:21:52 INFO:[dataprotect.data.ManageDB]  del iboot cmd: shell iboot del 000C29468772
+2014-9-16 11:21:53 INFO:[dataprotect.data.ManageDB]  del iboot cmd retcode: 0
+2014-9-16 11:21:53 INFO:[dataprotect.data.ManageDB]  add iboot cmd: shell iboot add 000C29468772 198.88.88.101 32827
+2014-9-16 11:21:54 INFO:[dataprotect.data.ManageDB]  add iboot cmd retcode: 0
+2014-9-16 11:21:54 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-16 11:21:55 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-16 11:21:55 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh delcli -p 000C29468772
+2014-9-16 11:21:57 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2014-9-16 11:22:02 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh addcli  -i 198.88.88.169 -p 000C29468772 -s 198.88.88.0 -x 198.88.88.101 -ostype windows
+2014-9-16 11:22:05 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2014-9-16 11:22:05 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-16 11:22:06 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-16 11:22:13 INFO:[dataprotect.cmdp.ui.PhyFailoverWizardDialog]  @@#################  Migration System from local disk to iSCSI Begin ###################@@ 
+2014-9-16 11:22:13 INFO:[dataprotect.cmdp.ui.PhyFailoverWizardDialog]  @@#################  Connect Agent Begin ###################@@ 
+2014-9-16 11:22:17 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd: /sbin/clnt_cmd 198.88.88.169 2015 cmd -cmdtype  getsysinfo 2>/dev/null
+2014-9-16 11:22:19 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd retcode: 0
+2014-9-16 11:22:19 INFO:[dataprotect.data.ManageDB] isStartupfromSAN cmd: /sbin/clnt_cmd 198.88.88.169 2015 cmd -cmdtype executeother -command  ib_get_disk_type.exe C
+2014-9-16 11:22:21 INFO:[dataprotect.data.ManageDB] isStartupFromSAN cmd retcode: 0
+2014-9-16 11:22:21 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140916112221 audit_clnt_id=7 audit_event_id=136  "audit_event_desc=Failed to netboot host: ESX-67-XP"
+2014-9-16 11:22:22 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-16 11:22:22 INFO:[dataprotect.data.ManageDB]  send this file to server: tmp8022700261823744007uwstmpfile
+2014-9-16 11:22:22 INFO:[dataprotect.data.ManageDB]  send file to server retcode: 0
+2014-9-16 11:22:22 INFO:[dataprotect.data.ManageDB]  add swu report: /usr/odybk/server/bin/idbmgr -report -add filename=/usr/odybk/server/tmp/tmp8022700261823744007uwstmpfile
+2014-9-16 11:22:23 INFO:[dataprotect.data.ManageDB]  add swu report retcode: 0
+2014-9-16 11:22:23 INFO:[dataprotect.cmdp.ui.PhyFailoverWizardDialog]  @@#################  Connect Agent End ###################@@ 
+2014-9-16 11:22:28 INFO:[dataprotect.cmdp.action.FailoverByPhyProtectAction] ########### End of phy-failover action. 
+2014-9-16 11:22:31 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3;"
+2014-9-16 11:22:32 INFO:[dataprotect.data.GetOrphanVol] listdisk cmd retcode: 0
+2014-9-16 11:22:32 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_cmdp_query_initstat 198.88.88.169,2015,7_C_cmdp_UWS727
+2014-9-16 11:22:35 INFO:[dataprotect.cmdp.service.GetInitProgress]  get init-progress retcode: 0
+2014-9-16 11:22:35 INFO:[dataprotect.data.ManageDB] check mg status cmd: /usr/odybk/vsnap/checkmg 11
+2014-9-16 11:22:36 INFO:[dataprotect.data.ManageDB] check mg status cmd retcode: 255
+2014-9-16 11:22:41 INFO:[dataprotect.cmdp.action.FailoverByPhyProtectAction] ########### Entering phy-failover action. 
+2014-9-16 11:22:46 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) cmd: /sbin/clnt_cmd 198.88.88.169 2015 cmd -cmdtype executeother -command  services_process.exe list 2>/dev/null
+2014-9-16 11:22:48 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2014-9-16 11:22:48 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) cmd: cat  /usr/odybk/server/conf//7-service.conf
+2014-9-16 11:22:49 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2014-9-16 11:22:53 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client cmd: cat /usr/odybk/server/conf//7.conf
+2014-9-16 11:22:54 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2014-9-16 11:22:54 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile cmd: cat /usr/odybk/server/conf//7.conf
+2014-9-16 11:22:55 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile retcode: 0
+2014-9-16 11:22:57 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile cmd: cat /usr/odybk/server/conf//7.conf
+2014-9-16 11:22:58 INFO:[dataprotect.data.GetNetInfoFromMDB]  get netinfo confile retcode: 0
+2014-9-16 11:22:58 INFO:[dataprotect.data.Get3rdDhcpInfo]  get the 3rd dhcp info cmd: cat /usr/odybk/server/conf//7-3rdDhcp.conf
+2014-9-16 11:22:59 INFO:[dataprotect.data.Get3rdDhcpInfo]  get the 3rd dhcp info retcode: 0
+2014-9-16 11:23:07 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd:/usr/odybk/vsnap/idbmgr -cloneinfo -prt  src_host_id=7 src_host_type=0 src_disk_root_id=13
+2014-9-16 11:23:08 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd retcode:0
+2014-9-16 11:23:08 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap db cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_root_id=13;"
+2014-9-16 11:23:09 INFO:[dataprotect.data.QueryVSnapDB]  query vsnap cmd retcode: 0
+2014-9-16 11:23:09 INFO:[dataprotect.data.GetBriefVDisk]  get brief disk cmd: /usr/odybk/vsnap/listsnap -m 13
+2014-9-16 11:23:10 INFO:[dataprotect.data.GetBriefVDisk]  get brief disk cmd retcode: 0
+2014-9-16 11:23:10 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd:/usr/odybk/vsnap/idbmgr -cloneinfo -prt  src_host_id=7 src_host_type=0 src_disk_root_id=13
+2014-9-16 11:23:11 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd retcode:0
+2014-9-16 11:23:28 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd: hostname
+2014-9-16 11:23:29 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd retcode: 0
+2014-9-16 11:23:29 INFO:[dataprotect.data.GetIScsiSessionObj]  get iscsi session cmd: shell info connect
+2014-9-16 11:23:30 INFO:[dataprotect.data.GetIScsiSessionObj]  get iscsi session cmd retcode: 0
+2014-9-16 11:23:30 INFO:[dataprotect.data.ManageDB] mod boot host: /usr/odybk/server/bin/idbmgr -clnt -mod  clnt_id=7 clnt_auto_switch_disk=0
+2014-9-16 11:23:31 INFO:[dataprotect.data.ManageDB] mod boot host retcode: 0
+2014-9-16 11:23:31 INFO:[dataprotect.data.ManageDB]  mod volmap cmd: /usr/odybk/server/bin/idbmgr -vol -mod vol_name=7_C_cmdp_UWS727 setversion=-10 vol_last_sel_boot_version=32827 vol_last_sel_boot_info=20140916104836 last_sel_boot_disk_type=-1
+2014-9-16 11:23:32 INFO:[dataprotect.data.ManageDB]  mod volmap cmd retcode: 0
+2014-9-16 11:23:32 INFO:[dataprotect.data.ManageDB] addLM cmd: /usr/odybk/server/bin/ib_server_add_lunmap.sh addlunmap 32827 198.88.88.169 255.255.255.255 rw    
+2014-9-16 11:23:33 INFO:[dataprotect.data.ManageDB] addLM cmd retcode: 0
+2014-9-16 11:23:33 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-16 11:23:34 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-16 11:23:34 INFO:[dataprotect.data.ManageDB]  del iboot cmd: shell iboot del 000C29468772
+2014-9-16 11:23:35 INFO:[dataprotect.data.ManageDB]  del iboot cmd retcode: 0
+2014-9-16 11:23:35 INFO:[dataprotect.data.ManageDB]  add iboot cmd: shell iboot add 000C29468772 198.88.88.101 32827
+2014-9-16 11:23:36 INFO:[dataprotect.data.ManageDB]  add iboot cmd retcode: 0
+2014-9-16 11:23:36 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-16 11:23:37 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-16 11:23:37 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh delcli -p 000C29468772
+2014-9-16 11:23:39 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2014-9-16 11:23:44 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh addcli  -i 198.88.88.169 -p 000C29468772 -s 198.88.88.0 -x 198.88.88.101 -ostype windows
+2014-9-16 11:23:46 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2014-9-16 11:23:46 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-16 11:23:47 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-16 11:25:53 INFO:[dataprotect.cmdp.action.FailoverByPhyProtectAction] ########### End of phy-failover action. 

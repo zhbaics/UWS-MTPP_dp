@@ -1,0 +1,143 @@
+2014-9-26 16:23:41 INFO:[dataprotect.ui.SanBootView] 二炮应急恢复系统配置管理器 6.1.0 版 buildtime:   Log Level: 1
+2014-9-26 16:23:41 INFO:[dataprotect.ui.SanBootView] Restore mirror type: 2
+2014-9-26 16:23:41 INFO:[dataprotect.ui.SanBootView] global high delta: 0
+2014-9-26 16:23:41 INFO:[dataprotect.ui.SanBootView] global width delta: 0
+2014-9-26 16:23:46 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-26 16:23:46 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-26 16:23:47 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-26 16:23:48 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-26 16:23:48 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-26 16:23:49 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0
+2014-9-26 16:23:49 INFO:[dataprotect.ui.InitApp] getting dhcp info.....
+2014-9-26 16:23:49 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2014-9-26 16:23:50 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-26 16:23:50 INFO:[dataprotect.ui.InitApp]  dhcpEnable: true
+2014-9-26 16:23:50 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2014-9-26 16:23:51 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2014-9-26 16:23:51 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2014-9-26 16:23:52 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2014-9-26 16:23:52 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2014-9-26 16:23:53 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2014-9-26 16:23:53 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-26 16:23:54 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-26 16:23:54 INFO:[dataprotect.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2014-9-26 16:23:55 INFO:[dataprotect.data.GetBootHost]  get BootHost retcode: 0
+2014-9-26 16:23:55 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2014-9-26 16:23:56 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2014-9-26 16:23:56 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-26 16:23:57 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-26 16:23:57 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-26 16:23:58 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-26 16:23:58 INFO:[dataprotect.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2014-9-26 16:23:59 INFO:[dataprotect.data.GetServMap]  get servicemap retcode: 0
+2014-9-26 16:23:59 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2014-9-26 16:24:00 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd retcode: 0
+2014-9-26 16:24:00 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-26 16:24:01 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-26 16:24:01 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-26 16:24:02 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-26 16:24:02 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2014-9-26 16:24:03 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2014-9-26 16:24:04 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2014-9-26 16:24:05 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2014-9-26 16:24:05 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-26 16:24:06 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-26 16:24:06 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2014-9-26 16:24:07 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile recode: 0
+2014-9-26 16:24:07 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2014-9-26 16:24:08 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2014-9-26 16:24:08 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2014-9-26 16:24:09 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2014-9-26 16:24:09 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-26 16:24:10 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-26 16:24:10 INFO:[dataprotect.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2014-9-26 16:24:11 INFO:[dataprotect.data.GetLicence]  get license retcode: 0
+2014-9-26 16:24:12 INFO:[dataprotect.ui.InitApp] mtpp point: 8
+2014-9-26 16:24:12 INFO:[dataprotect.ui.InitApp] cmdp point: 8
+2014-9-26 16:24:12 INFO:[dataprotect.ui.InitApp] mtpp maxsnap num: 128
+2014-9-26 16:24:12 INFO:[dataprotect.ui.InitApp] cmdp maxsnap num: 128
+2014-9-26 16:24:12 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140926162412 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2014-9-26 16:24:13 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-26 16:24:39 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### Entering window host's phy-init process
+2014-9-26 16:24:39 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-26 16:24:40 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-26 16:24:40 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-26 16:24:41 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-26 16:24:49 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype getsysinfo 2>/dev/null
+2014-9-26 16:24:51 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd retcode: 0
+2014-9-26 16:24:51 INFO:[dataprotect.data.GetAgentUUID]  get agt uuid cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  pc_gen_uuid.exe zxcvb12345 -get
+2014-9-26 16:24:53 INFO:[dataprotect.data.GetAgentUUID]  get agt uuid cmd retcode: 0
+2014-9-26 16:24:53 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-26 16:24:54 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-26 16:24:54 INFO:[dataprotect.data.GetMirrorDiskInfo]  get mirror_disk_info cmd: /usr/odybk/server/bin/idbmgr -diskinfo -prt all
+2014-9-26 16:24:56 INFO:[dataprotect.data.GetMirrorDiskInfo]  get mirror_disk_info retcode: 0
+2014-9-26 16:24:56 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd:/usr/odybk/vsnap/idbmgr -cloneinfo -prt  all 
+2014-9-26 16:24:57 INFO:[dataprotect.unlimitedIncMj.model.GetCloneDiskListCmd]  get clone disk list cmd retcode:0
+2014-9-26 16:24:57 INFO:[dataprotect.cmdp.service.GetFreePhyVol1] listdisk cmd: /usr/odybk/vsnap/vdbmgr -printdb "select * from vsnap where snap_opened_type=2 or snap_opened_type=3;"
+2014-9-26 16:24:58 INFO:[dataprotect.cmdp.service.GetFreePhyVol1] listdisk cmd retcode: 0
+2014-9-26 16:24:58 INFO:[dataprotect.cmdp.service.GetVolInfoOnClnt]  get partition (confile) cmd: /usr/odybk/server/bin/phydup_hash.sh uws_agt_list_volume 192.168.1.28,2015
+2014-9-26 16:25:00 INFO:[dataprotect.cmdp.service.GetVolInfoOnClnt]  get partition (confile) retcode: 0
+2014-9-26 16:25:00 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  services_process.exe list 2>/dev/null
+2014-9-26 16:25:02 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2014-9-26 16:25:02 INFO:[dataprotect.data.GetDiskPartitionTableForWinOnClnt]  get old(new) disk partition table for win cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  ib_save_partition.exe -list_local
+2014-9-26 16:25:05 INFO:[dataprotect.data.GetDiskPartitionTableForWinOnClnt]  get old(new) disk partition table for win retcode: 0
+2014-9-26 16:25:05 INFO:[dataprotect.data.ManageDB] isStartupfromSAN cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  ib_get_disk_type.exe C
+2014-9-26 16:25:08 INFO:[dataprotect.data.ManageDB] isStartupFromSAN cmd retcode: 0
+2014-9-26 16:25:11 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  ib_get_net_info.exe -a 00-00-00-00-00-00
+2014-9-26 16:25:13 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2014-9-26 16:26:17 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  services_process.exe list 2>/dev/null
+2014-9-26 16:26:19 INFO:[dataprotect.data.GetServiceOnClnt]  get service (confile) retcode: 0
+2014-9-26 16:26:42 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Init Windows Host By physical mode Begin ###################@@ 
+2014-9-26 16:26:42 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Build Mirror Begin ###################@@ 
+2014-9-26 16:26:42 INFO:[dataprotect.data.ManageDB] add boot host: /usr/odybk/server/bin/idbmgr -clnt -add  clnt_ip=192.168.1.28 clnt_port=2015 clnt_port1=5000 clnt_name=BZH-ED9C7A86A88 "clnt_os=WinXP" clnt_machine=x86 clnt_status=Online clnt_conf=19cf2a78-6817-4b16-803b-dfcfd98cd392 clnt_inited_flag=0 clnt_auto_dr_flag=0 clnt_auto_reboot_flag=0 clnt_stop_base_service=0 clnt_boot_mode=1 clnt_mode=0 clnt_protect_type=2
+2014-9-26 16:26:43 INFO:[dataprotect.data.ManageDB] add boot host retcode: 0
+2014-9-26 16:26:43 INFO:[dataprotect.cmdp.service.CommonCMDPCommand] set init type cmd: /usr/odybk/server/bin/phydup_fun.sh mirror_agent_set_init_type 192.168.1.28,2015,pause,1
+2014-9-26 16:26:47 INFO:[dataprotect.data.ManageDB] set init type cmd retcode: 0
+2014-9-26 16:26:47 INFO:[dataprotect.cmdp.service.CommonCMDPCommand] del mirror on client cmd: /usr/odybk/server/bin/phydup_fun.sh mirror_agent_delete_mirror_1 192.168.1.28,2015,C
+2014-9-26 16:26:50 INFO:[dataprotect.data.ManageDB] del mirror on client cmd retcode: 0
+2014-9-26 16:26:50 INFO:[dataprotect.cmdp.service.CommonCMDPCommand] set init type cmd: /usr/odybk/server/bin/phydup_fun.sh mirror_agent_set_init_type 192.168.1.28,2015,pause,0
+2014-9-26 16:26:53 INFO:[dataprotect.data.ManageDB] set init type cmd retcode: 0
+2014-9-26 16:26:53 INFO:[dataprotect.cmdp.service.BuildMirrorOnClnt]  build mirroring cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_cmdp_create_protected_voltype 192.168.1.28,2015,C,3600,65536,12,128,mg-C,bzh
+2014-9-26 16:27:43 INFO:[dataprotect.cmdp.service.BuildMirrorOnClnt] (BuildMirrorOnClnt)===> count=1
+2014-9-26 16:27:43 INFO:[dataprotect.cmdp.service.BuildMirrorOnClnt] (BuildMirrorOnClnt)===> ret=0
+2014-9-26 16:27:43 INFO:[dataprotect.cmdp.service.BuildMirrorOnClnt] (BuildMirrorOnClnt)===> name=1_C_cmdp_BZH
+2014-9-26 16:27:43 INFO:[dataprotect.cmdp.service.BuildMirrorOnClnt]  build mirroring cmd retcode: 0
+2014-9-26 16:27:43 INFO:[dataprotect.data.GetVolumeMap]  get one volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt vol_name=1_C_cmdp_BZH
+2014-9-26 16:27:44 INFO:[dataprotect.data.GetVolumeMap]  get one volmap list retcode: 0
+2014-9-26 16:27:44 INFO:[dataprotect.data.GetMGList]  get one mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt mg_id=1
+2014-9-26 16:27:45 INFO:[dataprotect.data.GetMGList]  get one mg retcode: 0
+2014-9-26 16:27:45 INFO:[dataprotect.cmdp.service.CommonCMDPCommand] set init type cmd: /usr/odybk/server/bin/phydup_fun.sh mirror_agent_set_init_type 192.168.1.28,2015,resume,0
+2014-9-26 16:27:50 INFO:[dataprotect.data.ManageDB] set init type cmd retcode: 0
+2014-9-26 16:27:50 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog] seled vol num: 0
+2014-9-26 16:27:50 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Format Volume Begin ###################@@ 
+2014-9-26 16:27:50 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Format Volume End ###################@@ 
+2014-9-26 16:27:50 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  build mirror and lp End ###################@@ 
+2014-9-26 16:27:50 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Get other info Begin ###################@@ 
+2014-9-26 16:27:50 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  ib_get_net_info.exe -a 00-0C-29-41-7F-B7
+2014-9-26 16:27:52 INFO:[dataprotect.data.GetIpInfoOnClnt]  get IP info of client retcode: 0
+2014-9-26 16:27:52 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Get other info END ###################@@ 
+2014-9-26 16:27:52 INFO:[dataprotect.cmdp.ui.PhyInitBootHostWizardDialog]  @@#################  Save info Begin ###################@@ 
+2014-9-26 16:27:52 INFO:[dataprotect.cmdp.ui.ReCrtPPProfileWhenInit] find volumes to delete, num# of del-vol is: 0
+2014-9-26 16:27:52 INFO:[dataprotect.cmdp.ui.ReCrtPPProfileWhenInit] find old profiles to delete, num of del-profile is: 0
+2014-9-26 16:27:52 INFO:[dataprotect.cmdp.ui.ReCrtPPProfileWhenInit] find new profiles to create, size of crt-profile is: 1
+2014-9-26 16:27:52 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-26 16:27:53 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-26 16:27:53 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-26 16:27:54 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-26 16:27:54 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-26 16:27:58 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-26 16:27:58 INFO:[dataprotect.data.ManageDB] db type: 0 for 1_C_cmdp_BZH
+2014-9-26 16:27:58 INFO:[dataprotect.data.ManageDB] mod auto-crt-snap parameter cmd: /usr/odybk/vsnap/vdbmgr -mg -mod mg_id=1 mg_schedule_type=0 mg_interval_time=600 mg_max_snapshot=128 mg_min_snap_size=0
+2014-9-26 16:27:59 INFO:[dataprotect.data.ManageDB] mod auto-crt-snap parameter cmd retcode: 0
+2014-9-26 16:27:59 INFO:[dataprotect.data.ManageDB] mod services-on-vol cmd: /usr/odybk/server/bin/idbmgr -vol -mod vol_name=1_C_cmdp_BZH changever_services=
+2014-9-26 16:28:00 INFO:[dataprotect.data.ManageDB] mod services-on-vol cmd retcode: 0
+2014-9-26 16:28:00 INFO:[dataprotect.data.ManageDB] mod db-info-on-vol cmd: /usr/odybk/server/bin/phydup_hash.sh zulu_database_setdbinfo 1_C_cmdp_BZH,0,0,
+2014-9-26 16:28:03 INFO:[dataprotect.data.ManageDB] mod db-info-on-vol cmd retcode: 0
+2014-9-26 16:28:03 INFO:[dataprotect.data.ManageDB]  mod volmap cmd: /usr/odybk/server/bin/idbmgr -vol -mod vol_name=1_C_cmdp_BZH vol_info=1
+2014-9-26 16:28:04 INFO:[dataprotect.data.ManageDB]  mod volmap cmd retcode: 0
+2014-9-26 16:28:04 INFO:[dataprotect.data.ManageDB] send singal to mg cmd: /usr/odybk/vsnap/killmg 1 1
+2014-9-26 16:28:05 INFO:[dataprotect.data.ManageDB] send signal to mg retcode: 0
+2014-9-26 16:28:05 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd: hostname
+2014-9-26 16:28:06 INFO:[dataprotect.data.GetTargetServerName]  get target server name cmd retcode: 0
+2014-9-26 16:28:06 INFO:[dataprotect.data.GetWindir]  get windir cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype executeother -command  ib_get_win_dir.exe
+2014-9-26 16:28:09 INFO:[dataprotect.data.GetWindir]  get windir cmd retcode: 0

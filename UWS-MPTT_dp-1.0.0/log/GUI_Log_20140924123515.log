@@ -1,0 +1,10 @@
+2014-9-24 12:35:16 INFO:[dataprotect.ui.SanBootView] 二炮应急恢复系统配置管理器 6.1.0 版 buildtime:   Log Level: 1
+2014-9-24 12:35:16 INFO:[dataprotect.ui.SanBootView] Restore mirror type: 2
+2014-9-24 12:35:16 INFO:[dataprotect.ui.SanBootView] global high delta: 0
+2014-9-24 12:35:16 INFO:[dataprotect.ui.SanBootView] global width delta: 0
+2014-9-24 12:35:22 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-24 12:35:22 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-24 12:35:22 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-24 12:35:23 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-24 12:35:33 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-24 12:35:34 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0

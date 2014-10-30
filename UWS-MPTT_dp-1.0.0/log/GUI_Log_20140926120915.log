@@ -1,0 +1,188 @@
+2014-9-26 12:09:15 INFO:[dataprotect.ui.SanBootView] 二炮应急恢复系统配置管理器 6.1.0 版 buildtime:   Log Level: 1
+2014-9-26 12:09:15 INFO:[dataprotect.ui.SanBootView] Restore mirror type: 2
+2014-9-26 12:09:15 INFO:[dataprotect.ui.SanBootView] global high delta: 0
+2014-9-26 12:09:15 INFO:[dataprotect.ui.SanBootView] global width delta: 0
+2014-9-26 12:56:15 INFO:[dataprotect.LoginAction] ########### Entering login action. 
+2014-9-26 12:56:21 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-26 12:56:21 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-26 12:56:21 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-26 12:56:22 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-26 12:56:22 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-26 12:56:23 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0
+2014-9-26 12:56:24 INFO:[dataprotect.ui.InitApp] getting dhcp info.....
+2014-9-26 12:56:24 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2014-9-26 12:56:25 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-26 12:56:25 INFO:[dataprotect.ui.InitApp]  dhcpEnable: true
+2014-9-26 12:56:25 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2014-9-26 12:56:26 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2014-9-26 12:56:26 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2014-9-26 12:56:27 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2014-9-26 12:56:27 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2014-9-26 12:56:28 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2014-9-26 12:56:28 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-26 12:56:29 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-26 12:56:29 INFO:[dataprotect.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2014-9-26 12:56:30 INFO:[dataprotect.data.GetBootHost]  get BootHost retcode: 0
+2014-9-26 12:56:30 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2014-9-26 12:56:31 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2014-9-26 12:56:31 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-26 12:56:32 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-26 12:56:32 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-26 12:56:33 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-26 12:56:33 INFO:[dataprotect.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2014-9-26 12:56:35 INFO:[dataprotect.data.GetServMap]  get servicemap retcode: 0
+2014-9-26 12:56:35 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2014-9-26 12:56:36 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd retcode: 0
+2014-9-26 12:56:36 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-26 12:56:37 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-26 12:56:37 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-26 12:56:38 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-26 12:56:38 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2014-9-26 12:56:39 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2014-9-26 12:56:39 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2014-9-26 12:56:40 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2014-9-26 12:56:40 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-26 12:56:41 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-26 12:56:41 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2014-9-26 12:56:42 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile recode: 0
+2014-9-26 12:56:42 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2014-9-26 12:56:43 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2014-9-26 12:56:43 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2014-9-26 12:56:45 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2014-9-26 12:56:45 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-26 12:56:46 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-26 12:56:46 INFO:[dataprotect.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2014-9-26 12:56:47 INFO:[dataprotect.data.GetLicence]  get license retcode: 0
+2014-9-26 12:56:47 INFO:[dataprotect.ui.InitApp] mtpp point: 8
+2014-9-26 12:56:47 INFO:[dataprotect.ui.InitApp] cmdp point: 8
+2014-9-26 12:56:47 INFO:[dataprotect.ui.InitApp] mtpp maxsnap num: 128
+2014-9-26 12:56:47 INFO:[dataprotect.ui.InitApp] cmdp maxsnap num: 128
+2014-9-26 12:56:47 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140926125647 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2014-9-26 12:56:48 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-26 12:56:48 INFO:[dataprotect.LoginAction] ########### End of login action. 
+2014-9-26 12:56:56 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### Entering window host's phy-init process
+2014-9-26 12:56:56 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-26 12:56:57 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-26 12:56:57 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-26 12:56:58 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-26 12:58:42 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype getsysinfo 2>/dev/null
+2014-9-26 12:58:46 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd retcode: 1
+2014-9-26 12:58:46 ERROR:[dataprotect.data.GetAgentInfo]  get agt cmd errmsg: connect to server failed, ip=192.168.1.28, errno=101
+
+2014-9-26 13:00:26 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype getsysinfo 2>/dev/null
+2014-9-26 13:00:30 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd retcode: 1
+2014-9-26 13:00:30 ERROR:[dataprotect.data.GetAgentInfo]  get agt cmd errmsg: connect to server failed, ip=192.168.1.28, errno=101
+
+2014-9-26 13:00:34 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### End of window host's phy-init process action. 
+2014-9-26 13:00:54 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### Entering window host's phy-init process
+2014-9-26 13:00:54 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-26 13:00:55 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-26 13:00:55 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-26 13:00:56 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-26 13:01:07 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype getsysinfo 2>/dev/null
+2014-9-26 13:01:11 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd retcode: 1
+2014-9-26 13:01:11 ERROR:[dataprotect.data.GetAgentInfo]  get agt cmd errmsg: connect to server failed, ip=192.168.1.28, errno=101
+
+2014-9-26 13:04:03 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### End of window host's phy-init process action. 
+2014-9-26 13:05:23 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### Entering window host's phy-init process
+2014-9-26 13:05:23 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-26 13:05:24 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-26 13:05:24 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-26 13:05:25 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-26 13:05:41 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd: /sbin/clnt_cmd 192.168.1.28 2015 cmd -cmdtype getsysinfo 2>/dev/null
+2014-9-26 13:05:45 INFO:[dataprotect.data.GetAgentInfo]  get agt cmd retcode: 1
+2014-9-26 13:05:45 ERROR:[dataprotect.data.GetAgentInfo]  get agt cmd errmsg: connect to server failed, ip=192.168.1.28, errno=101
+
+2014-9-26 13:05:48 INFO:[dataprotect.cmdp.action.InitHostByPhyProtectAction] ########### End of window host's phy-init process action. 
+2014-9-26 13:13:00 INFO:[dataprotect.DhcpSet] ########### Entering dhcp operation action. 
+2014-9-26 13:14:12 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh addsubnet -s 192.168.1.0 -n 255.255.255.0 -r 192.168.1.1 192.168.1.255 -a 0 -lease 86400
+2014-9-26 13:14:15 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 256
+2014-9-26 13:14:15 ERROR:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd errmsg: 
+2014-9-26 13:14:53 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh addsubnet -s 192.168.1.0 -n 255.255.255.0 -r 192.168.1.1 192.168.1.255 -a 0 -lease 86400
+2014-9-26 13:14:55 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 256
+2014-9-26 13:14:55 ERROR:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd errmsg: 
+2014-9-26 14:25:43 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh addsubnet -s 192.168.1.0 -n 255.255.255.0 -r 192.168.1.1 192.168.1.255 -a 0 -lease 86400
+2014-9-26 14:25:45 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: -1003
+2014-9-26 14:25:45 ERROR:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd errmsg: 网络通信出错!
+2014-9-26 15:02:18 INFO:[dataprotect.data.ManageDB]  send this file to server: tmp1806206730214383359prof
+2014-9-26 15:02:18 INFO:[dataprotect.data.ManageDB]  send file to server retcode: -1003
+2014-9-26 15:02:18 ERROR:[dataprotect.data.ManageDB]  send file to server errmsg: 网络通信出错!
+2014-9-26 15:02:41 ERROR:[dataprotect.tool.UWSSockConnectManager]  ################ client socket is bad. ###################
+2014-9-26 15:02:45 INFO:[dataprotect.DhcpSet] ########### End of dhcp operation acion. 
+2014-9-26 15:02:47 INFO:[dataprotect.LogoutAction] ########### Entering logout action. 
+2014-9-26 15:02:47 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140926150247 audit_clnt_id=0 audit_event_id=3  "audit_event_desc=Logout from system successfully."
+2014-9-26 15:02:48 INFO:[dataprotect.data.ManageDB]  add audit log retcode: -1003
+2014-9-26 15:02:48 ERROR:[dataprotect.data.ManageDB]  add audit log errmsg: 网络通信出错!
+2014-9-26 15:02:48 INFO:[dataprotect.data.ManageDB] begin to logout server.
+2014-9-26 15:02:48 ERROR:[dataprotect.data.ManageDB] logout server error: 网络通信出错!
+2014-9-26 15:02:49 INFO:[dataprotect.LogoutAction] ########### End of logout action. 
+2014-9-26 15:02:49 INFO:[dataprotect.LoginAction] ########### Entering login action. 
+2014-9-26 15:03:16 INFO:[dataprotect.data.ManageDB] begin to login server.
+2014-9-26 15:03:16 INFO:[dataprotect.data.ManageDB] login server successfully.
+2014-9-26 15:03:16 INFO:[dataprotect.data.GetConfigFile]  get config file cmd: cat /etc/odybk.conf
+2014-9-26 15:03:17 INFO:[dataprotect.data.GetConfigFile]  get config file retcode: 0
+2014-9-26 15:03:17 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config cmd: cat /usr/odybk/server/conf/dhcp.conf
+2014-9-26 15:03:18 INFO:[dataprotect.data.GetDhcpConfig]  get dhcp config retcode: 0
+2014-9-26 15:03:19 INFO:[dataprotect.data.GetBootHost]  get BootHost cmd: /usr/odybk/server/bin/idbmgr -clnt -prt all
+2014-9-26 15:03:20 INFO:[dataprotect.data.GetBootHost]  get BootHost retcode: 0
+2014-9-26 15:03:20 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd: /usr/odybk/server/bin/dbmgr -clnt -prt all
+2014-9-26 15:03:21 INFO:[dataprotect.datadup.cmd.GetBakClient]  get bak clnt cmd retcode: 0
+2014-9-26 15:03:21 INFO:[dataprotect.data.GetVolumeMap]  get volmap list cmd: /usr/odybk/server/bin/idbmgr -vol -prt all
+2014-9-26 15:03:22 INFO:[dataprotect.data.GetVolumeMap]  get volmap list retcode: 0
+2014-9-26 15:03:22 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd: shell iboot list
+2014-9-26 15:03:23 INFO:[dataprotect.data.GetIbootObjList]  get iboot list cmd retcode: 0
+2014-9-26 15:03:23 INFO:[dataprotect.data.GetServMap]  get servicemap cmd: /usr/odybk/server/bin/idbmgr -serv -prt all
+2014-9-26 15:03:24 INFO:[dataprotect.data.GetServMap]  get servicemap retcode: 0
+2014-9-26 15:03:24 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd: /usr/odybk/server/bin/dbmgr -acct -prt all
+2014-9-26 15:03:25 INFO:[dataprotect.data.GetBackupUser]  get bak user cmd retcode: 0
+2014-9-26 15:03:25 INFO:[dataprotect.data.GetPool]  getpool cmd: /usr/odybk/vsnap/vdbmgr -pool -prt all
+2014-9-26 15:03:26 INFO:[dataprotect.data.GetPool]  getpool retcode: 0
+2014-9-26 15:03:26 INFO:[dataprotect.data.GetMGList]  get mg cmd: /usr/odybk/vsnap/vdbmgr -mg -prt all
+2014-9-26 15:03:27 INFO:[dataprotect.data.GetMGList]  get mg retcode: 0
+2014-9-26 15:03:27 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host cmd: /usr/odybk/server/bin/idbmgr -dstagnt -prt all
+2014-9-26 15:03:28 INFO:[dataprotect.data.GetNetBootedHost]  get netbooted-host retcode: 0
+2014-9-26 15:03:28 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage cmd: /usr/odybk/server/bin/idbmgr -snapusage -prt all
+2014-9-26 15:03:29 INFO:[dataprotect.data.GetMirrorSnapusage]  get mirror_snap_usage retcode: 0
+2014-9-26 15:03:29 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup cmd: /usr/odybk/server/bin/phydup_hash.sh uws_drivesgroup_getall
+2014-9-26 15:03:35 INFO:[dataprotect.cmdp.service.GetDriveGroup]  get drivegroup retcode: 0
+2014-9-26 15:03:35 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile cmd: /usr/odybk/server/bin/listprofile
+2014-9-26 15:03:36 INFO:[dataprotect.datadup.cmd.ListProfile]  list profile recode: 0
+2014-9-26 15:03:36 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd: /usr/odybk/server/bin/dbmgr -bobj -prt all
+2014-9-26 15:03:37 INFO:[dataprotect.datadup.cmd.GetBakObjList]  list bakobj cmd retcode: 0
+2014-9-26 15:03:37 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd: /usr/odybk/server/bin/dbmgr -sch -prt all
+2014-9-26 15:03:38 INFO:[dataprotect.datadup.cmd.GetSchList]  get sch list cmd retcode: 0
+2014-9-26 15:03:38 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd: /usr/odybk/vsnap/poolinfo 1
+2014-9-26 15:03:39 INFO:[dataprotect.data.GetPoolInfo]  get poolinfo cmd retcode: 0
+2014-9-26 15:03:39 INFO:[dataprotect.data.GetLicence]  get license cmd: /usr/odybk/server/bin/listlicence
+2014-9-26 15:03:40 INFO:[dataprotect.data.GetLicence]  get license retcode: 0
+2014-9-26 15:03:40 INFO:[dataprotect.ui.InitApp] mtpp point: 8
+2014-9-26 15:03:40 INFO:[dataprotect.ui.InitApp] cmdp point: 8
+2014-9-26 15:03:40 INFO:[dataprotect.ui.InitApp] mtpp maxsnap num: 128
+2014-9-26 15:03:40 INFO:[dataprotect.ui.InitApp] cmdp maxsnap num: 128
+2014-9-26 15:03:42 INFO:[dataprotect.data.ManageDB]  add audit log cmd: /usr/odybk/server/bin/idbmgr -audit -add  audit_user_id=1 audit_time=20140926150342 audit_clnt_id=0 audit_event_id=2  "audit_event_desc=Logon to system successfully."
+2014-9-26 15:03:43 INFO:[dataprotect.data.ManageDB]  add audit log retcode: 0
+2014-9-26 15:03:43 INFO:[dataprotect.LoginAction] ########### End of login action. 
+2014-9-26 15:03:45 INFO:[dataprotect.DhcpSet] ########### Entering dhcp operation action. 
+2014-9-26 15:04:07 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2014-9-26 15:04:08 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-26 15:04:08 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2014-9-26 15:04:09 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2014-9-26 15:04:09 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2014-9-26 15:04:10 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2014-9-26 15:04:10 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2014-9-26 15:04:11 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2014-9-26 15:04:11 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-26 15:04:12 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-26 15:04:49 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd: /usr/odybk/server/bin/dhcp_set.sh delsubnet -s 10.10.1.0
+2014-9-26 15:04:51 INFO:[dataprotect.data.SyncOpCmdWithNoOutput] sync withoutput cmd retcode: 0
+2014-9-26 15:05:32 INFO:[dataprotect.data.ViewTextFile] viewFile cmd: cat /etc/sysconfig/customdrv/dhcpenable
+2014-9-26 15:05:33 INFO:[dataprotect.data.ViewTextFile] viewFile cmd retcode: 0
+2014-9-26 15:05:33 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listglobal
+2014-9-26 15:05:34 INFO:[dataprotect.data.GetGlobalOptFromDHCP] getGlobalOptFromDHCP retcode: 0
+2014-9-26 15:05:34 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp cmd: /usr/odybk/server/bin/dhcp_set.sh getsubnetinfo
+2014-9-26 15:05:35 INFO:[dataprotect.data.GetSubnetFromDHCP] getSubnet from dhcp retcode: 0
+2014-9-26 15:05:35 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP cmd: /usr/odybk/server/bin/dhcp_set.sh listnextserver
+2014-9-26 15:05:37 INFO:[dataprotect.data.GetIBootSrvFromDHCP] getIBootSrvFromDHCP retcode: 0
+2014-9-26 15:05:37 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp cmd: /usr/odybk/server/bin/dhcp_set.sh listallclients
+2014-9-26 15:05:38 INFO:[dataprotect.data.GetClientFromDHCP]  getClntFromDhcp retcode: 0
+2014-9-26 15:07:06 INFO:[dataprotect.DhcpSet] ########### End of dhcp operation acion. 
